@@ -1,3 +1,3 @@
-default: reveel.cpp
-	clang++ -I /usr/local/include reveel.cpp -o reveel
+default: src/reveel.cpp
+	clang++ -I /usr/local/include src/reveel.cpp -o reveel
 
