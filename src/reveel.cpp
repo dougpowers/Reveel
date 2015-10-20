@@ -1,12 +1,12 @@
-#include <boost/lambda/lambda.hpp>
 #include <iostream>
-#include <iterator>
-#include <algorithm>
+#include <ncurses.h>
 
 int main() {
-    using namespace boost::lambda;
-    typedef std::istream_iterator<int> in;
+    initscr();
+    printw("Hello World !!!");
+    refresh();
+    getch();
+    endwin();
 
-    std::for_each(
-            in(std::cin), in(), std::cout << (_1 * 3) << " " );
+    return 0;
 }

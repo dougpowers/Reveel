@@ -90,6 +90,8 @@ reveel_EXTERNAL_OBJECTS =
 
 reveel: CMakeFiles/reveel.dir/src/reveel.cpp.o
 reveel: CMakeFiles/reveel.dir/build.make
+reveel: /usr/lib/libcurses.dylib
+reveel: /usr/lib/libform.dylib
 reveel: CMakeFiles/reveel.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dougpowers/Programming/C++/Reveel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable reveel"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/reveel.dir/link.txt --verbose=$(VERBOSE)

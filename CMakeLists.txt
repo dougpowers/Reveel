@@ -1,7 +1,11 @@
 cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
 
-project("Reveel")
+project("reveel")
 
 add_executable(reveel src/reveel.cpp)
 
-include_directories(/usr/local/include)
+find_package(Curses REQUIRED)
+
+target_link_libraries("reveel" ${CURSES_LIBRARIES})
+
+include_directories(${CURSES_INCLUDE_DIR})
