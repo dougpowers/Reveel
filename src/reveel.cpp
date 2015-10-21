@@ -9,7 +9,7 @@ int main() {
     ncurses::initscr();
     ncurses::printw("Hello World !!!");
     ncurses::refresh();
-    ncurses::wgetch(ncurses::stdscr);
+    ncurses::getch();
     ncurses::endwin();
 
     return 0;
