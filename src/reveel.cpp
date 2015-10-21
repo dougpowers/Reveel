@@ -1,12 +1,16 @@
 #include <iostream>
-#include <ncurses.h>
+namespace ncurses {
+    extern "C" {
+        #include <ncurses.h>
+    }
+}
 
 int main() {
-    initscr();
-    printw("Hello World !!!");
-    refresh();
-    getch();
-    endwin();
+    ncurses::initscr();
+    ncurses::printw("Hello World !!!");
+    ncurses::refresh();
+    ncurses::wgetch(ncurses::stdscr);
+    ncurses::endwin();
 
     return 0;
 }
