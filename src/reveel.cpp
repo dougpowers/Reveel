@@ -1,4 +1,6 @@
 #include <iostream>
+#include "reveel.h"
+
 namespace ncurses {
     extern "C" {
         #include <ncurses.h>
@@ -6,11 +8,5 @@ namespace ncurses {
 }
 
 int main() {
-    ncurses::initscr();
-    ncurses::printw("Hello World !!!");
-    ncurses::refresh();
-    ncurses::getch();
-    ncurses::endwin();
-
-    return 0;
+    
 }

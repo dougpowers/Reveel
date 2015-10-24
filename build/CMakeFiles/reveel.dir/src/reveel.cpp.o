@@ -38119,6 +38119,22 @@ extern __attribute__ ((__visibility__("default"))) wostream wclog;
 
 } }
 # 2 "/Users/dougpowers/Programming/C++/Reveel/src/reveel.cpp" 2
+# 1 "/Users/dougpowers/Programming/C++/Reveel/src/reveel.h" 1
+
+
+
+class Node {
+    protected:
+        Node parent;
+        long size;
+    public:
+        Node getParent();
+        void setParent(Node);
+        long getSize();
+        long setSize(long);
+}
+# 3 "/Users/dougpowers/Programming/C++/Reveel/src/reveel.cpp" 2
+
 namespace ncurses {
     extern "C" {
 
@@ -38541,7 +38557,7 @@ extern char * _tracemouse (const MEVENT *);
 extern void trace (const unsigned int);
 # 1754 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/curses.h" 3 4
 }
-# 5 "/Users/dougpowers/Programming/C++/Reveel/src/reveel.cpp" 2
+# 7 "/Users/dougpowers/Programming/C++/Reveel/src/reveel.cpp" 2
  }
 }
 
