@@ -15,4 +15,8 @@ ncurses.h
 -
 
 /Users/dougpowers/Programming/C++/Reveel/src/reveel.h
+vector
+-
+string
+-
 
